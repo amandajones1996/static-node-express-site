@@ -1,20 +1,24 @@
+
+// imports
 const express = require('express');
-const router = express.Router();
-const data = require('./data.json');
+const { projects } = require('./data.json');
 const path = require('path');
 
 const app = express();
+const router = express.Router();
 
 // middleware setup of view engine to pug
-app.set('viewnengine', 'pug');
+app.set('view engine', 'pug');
 
 // use static files
 app.use(express.static('public'));
 
+app.use(express.urlencoded({ extended: false }))
+
 
 // home page route
 app.get('/', (req, res) => {
-    res.render('index', { projects: data.projects });
+    res.render('index', { projects });
 })
 
 // about page route
@@ -26,7 +30,7 @@ app.get('/about', (req, res) => {
 app.get('/project/:id', (req, res) => {
     console.log("heres the request object", req)
     const projectId = req.params.id;
-    const projectMatched = data.projects.find(project => project.id === projectId);
+    const project = projects.find( ({ id }) => id === projectId);
     res.render('project', { project })
 })
 
