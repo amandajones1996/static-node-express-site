@@ -27,7 +27,7 @@ app.get('/about', (req, res) => {
 })
 
 // dynamic projects route
-app.get('/project/:id', (req, res) => {
+app.get('/projects/:id', (req, res) => {
     console.log("heres the request object", req)
     const projectId = req.params.id;
     const project = projects.find( ({ id }) => id === projectId);
