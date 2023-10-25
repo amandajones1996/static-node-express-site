@@ -11,7 +11,7 @@ const router = express.Router();
 app.set('view engine', 'pug');
 
 // use static files
-app.use(express.static('public'));
+app.use("/static", express.static('public'));
 
 app.use(express.urlencoded({ extended: false }))
 
@@ -32,6 +32,11 @@ app.get('/projects/:id', (req, res) => {
     const projectId = req.params.id;
     const project = projects.find( ({ id }) => id === projectId);
     res.render('project', { project })
+})
+
+// 404 handler
+app.use((req, res, next) => {
+    res.status(404).render('Not Found')
 })
 
 // server

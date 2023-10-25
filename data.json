@@ -6,7 +6,7 @@
             "technologies": ["Javascript", "HTML", "CSS"], 
             "live_links": "https://amandajones1996.github.io/a_random_quote_generator-v1/",
             "github_link": "https://github.com/amandajones1996/a_random_quote_generator-v1", 
-            "image_urls": ["/images/random-qoute-1.jpeg", "images/qoute-generator-2.jpeg"]
+            "image_urls": ["/static/images/quote-generator-2.jpeg", "/static/images/random-quote-1.jpeg"]
         },
         {
             "id": 1,
@@ -15,7 +15,7 @@
             "technologies": ["Javascript", "HTML", "CSS"], 
             "live_links": "https://amandajones1996.github.io/data-pagination-and-filtering-v1/",
             "github_link": "https://github.com/amandajones1996/data-pagination-and-filtering-v1", 
-            "image_urls": ["/images/data-pagination-1.jpeg", "/images/data-pagination-2.jpeg"]
+            "image_urls": ["/static/images/data-pagination-1.jpeg", "/static/images/data-pagination-2.jpeg"]
         },
         {
             "id": 2,
@@ -24,7 +24,7 @@
             "technologies": ["Javascript", "HTML", "CSS"], 
             "live_links": "https://amandajones1996.github.io/interactive-form/",
             "github_link": "https://github.com/amandajones1996/interactive-form", 
-            "image_urls": ["/images/interactive-form-1.jpeg", "/images/interactive-form-2.jpeg"]
+            "image_urls": ["/static/images/interactive-form-1.jpeg", "/static/images/interactive-form-2.jpeg"]
         },
         {
             "id": 3,
@@ -33,7 +33,7 @@
             "technologies": ["Javascript", "HTML", "CSS"], 
             "live_links": "https://amandajones1996.github.io/oop_game/",
             "github_link": "https://github.com/amandajones1996/oop_game", 
-            "image_urls": ["/images/oop-game-1.jpeg", "/images/oop-game-2.jpeg"]
+            "image_urls": ["/static/images/oop-game-1.jpeg", "/static/images/oop-game-2.jpeg"]
         },
         {
             "id": 4,
@@ -42,7 +42,7 @@
             "technologies": ["Javascript", "Fetch", "HTML", "CSS"], 
             "live_links": "https://amandajones1996.github.io/student-files/",
             "github_link": "https://github.com/amandajones1996/student-files", 
-            "image_urls": ["/images/public-api-requests-1.jpeg", "/images/public-api-requests-2.jpeg"]
+            "image_urls": ["/static/images/public-api-requests-1.jpeg", "/static/images/public-api-requests-2.jpeg"]
         }
     ]
 }
