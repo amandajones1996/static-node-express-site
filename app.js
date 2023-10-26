@@ -28,16 +28,16 @@ app.get('/about', (req, res) => {
 
 // dynamic projects route
 app.get('/projects/:id', (req, res) => {
-    console.log("!!!!!!!!!!!!!!heres the request object", req)
     const projectId = req.params.id;
     const project = projects[projectId]
-    console.log("!!!!!!!!!!!!!!project", projectId)
+
     if(project){
         res.render('project', { project })
     } else {
         const err = new Error()
         err.message = 'Oh no! It looks like you search was not found.'
         err.status = 404
+        console.log(err.message, err.status)
         res.render("page-not-found", { err })
     }
 })
@@ -47,6 +47,7 @@ app.use((req, res, next) => {
     const err = new Error()
     err.message = 'Oh no! It looks like you search was not found.'
     err.status = 404
+    console.log(err.message, err.status)
     res.render("page-not-found", { err })
 })
 
@@ -54,7 +55,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
     err.status = err.status || 500
     err.message = err.message || "It looks like you've encountered a server error."
-    console.error(`Error: ${err.message}`)
+    console.log(`Error: ${err.message}`)
     res.render("error", { err })
 })
 

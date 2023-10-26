@@ -4,7 +4,7 @@
             "project_name": "A Random Quote Generator",
             "description": "A random quote generator that generates a new code on the screen after time lapsed or after clicking the button to show another quote.",
             "technologies": ["Javascript", "HTML", "CSS"], 
-            "live_links": "https://amandajones1996.github.io/a_random_quote_generator-v1/",
+            "live_link": "https://amandajones1996.github.io/a_random_quote_generator-v1/",
             "github_link": "https://github.com/amandajones1996/a_random_quote_generator-v1", 
             "image_urls": ["/static/images/random-quote-1.jpeg", "/static/images/quote-generator-2.jpeg"]
         },
@@ -13,7 +13,7 @@
             "project_name": "Data Pagination and Filtering",
             "description": "This project used pagination to dynamically filter through an array of 42 students, including there email and photo.",
             "technologies": ["Javascript", "HTML", "CSS"], 
-            "live_links": "https://amandajones1996.github.io/data-pagination-and-filtering-v1/",
+            "live_link": "https://amandajones1996.github.io/data-pagination-and-filtering-v1/",
             "github_link": "https://github.com/amandajones1996/data-pagination-and-filtering-v1", 
             "image_urls": ["/static/images/data-pagination-1.jpeg", "/static/images/data-pagination-2.jpeg"]
         },
@@ -22,7 +22,7 @@
             "project_name": "Interactive Form",
             "description": "A interactive form that is enhanced with javascript by validating user input and providing user friendly error messages",
             "technologies": ["Javascript", "HTML", "CSS"], 
-            "live_links": "https://amandajones1996.github.io/interactive-form/",
+            "live_link": "https://amandajones1996.github.io/interactive-form/",
             "github_link": "https://github.com/amandajones1996/interactive-form", 
             "image_urls": ["/static/images/interactive-form-1.jpeg", "/static/images/interactive-form-2.jpeg"]
         },
@@ -31,7 +31,7 @@
             "project_name": "OOP Game Show APP",
             "description": "This is a word guessing game using object oriented programming to select a random phrase. The user tries to guess by clicking letters in the game and has a limited of incorrect guesses before the game ends.",
             "technologies": ["Javascript", "HTML", "CSS"], 
-            "live_links": "https://amandajones1996.github.io/oop_game/",
+            "live_link": "https://amandajones1996.github.io/oop_game/",
             "github_link": "https://github.com/amandajones1996/oop_game", 
             "image_urls": ["/static/images/oop-game-1.jpeg", "/static/images/oop-game-2.jpeg"]
         },
@@ -40,7 +40,7 @@
             "project_name": "Public API Requests",
             "description": "An app built for remote employees",
             "technologies": ["Javascript", "Fetch", "HTML", "CSS"], 
-            "live_links": "https://amandajones1996.github.io/student-files/",
+            "live_link": "https://amandajones1996.github.io/student-files/",
             "github_link": "https://github.com/amandajones1996/student-files", 
             "image_urls": ["/static/images/public-api-requests-1.jpeg", "/static/images/public-api-requests-2.jpeg"]
         }
