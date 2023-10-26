@@ -14,17 +14,20 @@ html(lang="en" dir="ltr")
       .sidebar-info-box
         br
         .thumbnail-box
-          img.thumbnail(src='https://placehold.it/550x350', alt='')
+          a(href="/")
+            img.thumbnail(src='/static/images/headshot.jpeg', alt='Headshot of Amanda')
         .dev-intro-box
 
           //- Replace with your name
-          h5 Name
+          h5 Amanda Jones
 
           //- Replace with description of who you are, what you do, and why you are so awesome
-          p Description
+          p Fullstack software developer with a background in ICU nursing. 
+          p I have developed strong skills in adaptability, attention to detail, and ability to collaborate effectively in interdisciplinary teams. 
+          p My goal is to leverage my diverse skill set into innovative software development.
 
           //- Add path from your '/about' route handler to the href below
-          a(href='') Learn More &rarr;
+          a(href='/about') Learn More &rarr;
 
     .wrapper
       .header
@@ -32,7 +35,7 @@ html(lang="en" dir="ltr")
           button#menu-icon.menu-icon(type='button' data-toggle='my-info')
 
           //- Replace with your name — this is for the mobile layout
-          span Name
+          span Amanda Jones
 
       block content
 

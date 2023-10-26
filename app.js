@@ -28,18 +28,40 @@ app.get('/about', (req, res) => {
 
 // dynamic projects route
 app.get('/projects/:id', (req, res) => {
-    console.log("heres the request object", req)
+    console.log("!!!!!!!!!!!!!!heres the request object", req)
     const projectId = req.params.id;
-    const project = projects.find( ({ id }) => id === projectId);
-    res.render('project', { project })
+    const project = projects[projectId]
+    console.log("!!!!!!!!!!!!!!project", projectId)
+    if(project){
+        res.render('project', { project })
+    } else {
+        const err = new Error()
+        err.message = 'Oh no! It looks like you search was not found.'
+        err.status = 404
+        res.render("page-not-found", { err })
+    }
 })
 
 // 404 handler
 app.use((req, res, next) => {
-    res.status(404).render('Not Found')
+    const err = new Error()
+    err.message = 'Oh no! It looks like you search was not found.'
+    err.status = 404
+    res.render("page-not-found", { err })
+})
+
+// global error handler
+app.use((err, req, res, next) => {
+    err.status = err.status || 500
+    err.message = err.message || "It looks like you've encountered a server error."
+    console.error(`Error: ${err.message}`)
+    res.render("error", { err })
 })
 
 // server
 app.listen(3000, () => {
     console.log("this app is running")
 })
+
+
+// indiviual projects never loading page - do i need to pass "project to something?"
